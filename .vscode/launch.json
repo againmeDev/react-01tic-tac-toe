@@ -7,9 +7,12 @@
         {
             "type": "chrome",
             "request": "launch",
+            //"request": "attach",
             "name": "Chrome-로컬-React 디버그",
-            "url": "http://localhost:5173",
-            "webRoot": "${workspaceFolder}/src"
+            "url": "http://localhost:5173/",
+            //"port": 5173,
+            "webRoot": "${workspaceFolder}/src",
+            //"userDataDir": true // <--- 이 옵션을 추가하면 내 Chrome 기본 프로필을 그대로 사용합니다.
         }
     ]
 }
